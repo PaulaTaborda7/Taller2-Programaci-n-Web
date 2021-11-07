@@ -1,0 +1,58 @@
+/* Se le da a todo el documento HTML 0 de margin y padding para que no haya conflicto con las posiciones posteriores */
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* Configuramos el navbar para que tenga unas dimensiones establecidas, que sea de color gris y que el texto dentro de este sea en negrilla */
+#navbar{
+    background-color: gray;
+    width: 100%;
+    height: 80px;
+    font-weight: bold;
+}
+
+/* Usando posición absoluta organizamos la posición y el tamaño del logo de acuerdo al estilo que buscábamos darle*/
+#logo{
+    top: 18px;
+    left: 80px;
+    position: absolute;
+    height: 40px;
+}
+
+/* De forma similar al logo, le damos una posición absoluta al texto del navbar, movemos su posición usando top (desplazamos hacia abajo), le damos un margen a la izquierda, cambiamos su tamaño y color de letra */
+#textoNavbar{
+   position: absolute;
+   top:20px;
+   margin-left: 10%;
+   font-size: 30px;
+   color: white;
+}
+
+/* Movemos la lista de acceso al resto de páginas del sitio hacia la derecha haciendo uso del margin-left */
+#navbar ul{
+    margin-left: 70%;
+}
+
+
+#navbar ul li{
+    /* Mostramos la lista de páginas en línea y en bloque y con su texto centrado */
+    display: inline-block;
+    text-align: center;
+    /* Ajustamos las dimensiones de los bloques con el fin de que tenga un efecto notorio al posteriormente usar la pseudoclase hover */
+    height:60px;
+    width: 100px;
+    /* Movemos un poco el texto hacia abajo para que se vea centrado en el navbar */
+    padding-top: 25px;
+}
+
+#navbar ul li a{
+    /* A cada link le quitamos su decoración y le ponemos texto colo blanco */
+    text-decoration: none;
+    color: white;
+}
+
+/* A la pseudoclase hover de los li que están en navbar le poner un color de fondo anaranjado similar al de los balones de baloncesto */
+#navbar ul li:hover{
+    background-color: #FF9745;
+}
