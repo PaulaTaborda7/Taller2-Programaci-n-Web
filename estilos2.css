@@ -143,9 +143,9 @@ form {
 
   /* Estilos para el div que contiene el logo del formulario */
 #contenedor_logo_formulario {
-    position: relative;
+    /* position: relative;
     width: 100%;
-    left: 450px;
+    left: 450px; */
 }
 
 /* Estilos para el logo del formulario */
@@ -153,6 +153,9 @@ form {
     width: 10%;
     height: 10%;
     cursor: pointer;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 /* Se usa la pseudo clase :hover para que cuando el usaurio pase el cursor por el logo del formulario
