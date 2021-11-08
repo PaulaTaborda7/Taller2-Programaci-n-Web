@@ -140,3 +140,42 @@ h1, h2{
     height: 287.18px;
     margin: 1%;
 }
+
+footer {
+    /* Estas propiedades son para que el Footer se quede quieto al final de la página. Obtenido de: https://www.codeinwp.com/snippets/sticky-footer-with-css/ */
+    flex-grow: 0;
+    flex-shrink: 0;
+    flex-basis: auto;
+    /* Le damos el color de fondo del navbar */
+    background-color: #1A67AC;
+    /* Centramos el texto dentro del footer y le damos un color blanco a la letra */
+    text-align: center;
+    color: white;
+    
+}
+
+/* Modificamos el body para que el footer quede al final de la página */
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Modificamos el main para que el footer quede al final de la página */
+main {
+    flex-grow: 1;
+    flex-shrink: 0;
+    flex-basis: auto;
+}
+
+/* Le damos un color un poco más oscuro al título del footer, además definimos un padding y un height */
+footer #tituloFooter{
+    padding: 20px;
+    background-color: #034e91;
+    height: 20px;
+}
+
+/* Al cuerpo del footer simplemente le definimos un padding para que no queden muy pegados los elementos  */
+footer #cuerpoFooter{
+    padding: 15px;
+}
