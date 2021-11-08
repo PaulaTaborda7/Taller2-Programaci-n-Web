@@ -57,33 +57,46 @@
     background-color: #f57e23;
 }
 
+/* Agregamos una imagen de fondo al body de la página web y definimos que su tamaño será del 100% con respecto a la página */
 body{
     background-image: url("img/fondo.jpg");
     background-size: 100%;
 }
 
+/* Clase específica para los contenedores del index */
 .indexContenedor{
+    /* Definición del borde con su estilo, color y radio */
     border: black;
     border-style: solid;
     border-radius: 10px;
+    /* Escogemos un color similar al blanco para que sea el fondo del contenedor. Además, se le deja una opacidad del 85% lo cual corresponde a una transparencia del 15% */
     background-color: whitesmoke;
-    width: 80%;
-    height: 100%;
+    opacity: 85%;
+    /* Definimos márgenes del 10% tanto a izquierda como a derecha con el fin de tener centrado el contenedor */
     margin-left: 10%;
+    margin-right: 10%;
+    /* Definimos márgenes de 15px tanto hacia arriba como hacia abajo para que los contenedores estén separados de si mismos y de cualquier otro contenido */
     margin-top: 15px;
     margin-bottom: 15px;
+    /* Damos un ancho del 80%, por lo que quedará un 10% libre tanto a izquierda como a derecha del contenedor. La altura siempre será del 100% con respecto al contenido */
+    width: 80%;
+    height: 100%;
+    /* Agregamos un padding del 2% para que el contenido no quede tan pegado a los bordes */
     padding: 2%;
-    opacity: 85%;
+    
 }
 
+/* Definimos que, por defecto, el contenido de los h1 y h2 esté centrado */
 h1, h2{
     text-align: center;
 }
 
+/* Agregamos un poco de interlineado al listado de reglas del baloncesto con el fin de hacerlo un poco más legible */
 #indexListadoReglas{
     line-height: 150%;
 }
 
+/* Le aplicamos un gradiente a la tabla de Roles de jugadores, además de que definimos que el color de fuente de la tabla será el blanco */
 #indexTablaRolesJugadores{
     /* Este gradiente fue obtenido usando la siguiente página web:  https://cssgradient.io*/
     background: linear-gradient(259deg, rgba(2,0,36,1) 0%, rgba(184,23,23,1) 45%, rgba(0,56,255,1) 100%);
@@ -91,6 +104,78 @@ h1, h2{
     
 }
 
+/* Aplicamos un efecto de resalto al pasar el cursor por alguna de las casillas de la tabla de roles de jugadores */
 #indexTablaRolesJugadores td:hover, #indexTablaRolesJugadores th:hover{
     background-color: rgba(255,255,255,0.3);
+}
+
+/* Metemos los audios dentro de una tabla y centramos dicha tabla definiendo márgenes automáticos a izquierda y derecha */
+#audios table{
+    text-align: center;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+/* Centramos el iframe usando un display block y márgenes automáticos a izquierda y derecha. Además, se definen unas dimensiones estandar para el iframe. */
+#videos iframe{
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    width: 560px;
+    height: 315px;
+
+}
+
+/* Centramos el contenido del contenedor de imágenes haciendo uso de un display flex. También definimos un ancho del 90% con respecto al contenedor padre y unos márgenes del 5% a izquierda y derecha */
+#contenedorImagenes{
+    display: flex;
+    justify-content: center;
+    width: 90%;
+    margin-right: 5%;
+    margin-left: 5%;
+}
+
+/* Definimos un ancho estándar para las imágenes y definimos un margen del 1% para separar las imagenes del resto del contenido */
+#contenedorImagenes img{
+    height: 287.18px;
+    margin: 1%;
+}
+
+footer {
+    /* Estas propiedades son para que el Footer se quede quieto al final de la página. Obtenido de: https://www.codeinwp.com/snippets/sticky-footer-with-css/ */
+    flex-grow: 0;
+    flex-shrink: 0;
+    flex-basis: auto;
+    /* Le damos el color de fondo del navbar */
+    background-color: #1A67AC;
+    /* Centramos el texto dentro del footer y le damos un color blanco a la letra */
+    text-align: center;
+    color: white;
+    
+}
+
+/* Modificamos el body para que el footer quede al final de la página */
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Modificamos el main para que el footer quede al final de la página */
+main {
+    flex-grow: 1;
+    flex-shrink: 0;
+    flex-basis: auto;
+}
+
+/* Le damos un color un poco más oscuro al título del footer, además definimos un padding y un height */
+footer #tituloFooter{
+    padding: 20px;
+    background-color: #034e91;
+    height: 20px;
+}
+
+/* Al cuerpo del footer simplemente le definimos un padding para que no queden muy pegados los elementos  */
+footer #cuerpoFooter{
+    padding: 15px;
 }
