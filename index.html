@@ -77,34 +77,48 @@
 			</table>
         </section>
 
-        <section class = "indexContenedor" id = "indexMultimedia">
-            <h2>Multimedia:</h2>
+        <section class = "indexContenedor">
+            <h2>Multimedia</h2>
             <br>
-			<table border="1">
-				<thead>
-					<tr>
-						<th><h4>Imagen</h4></th>
-						<th><h4>Audio</h4></th>
-						<th><h4>Multimedia</h4></th>
-					</tr>
-				</thead>
-				<tbody>
-					<tr>
-						<td><img src="img/juego2.png"></td>
-						<td><h5>Audio de la NBA:</h5> 
-							<audio controls loop preload="metadatos">
-							<source src="audio/nba-sound.mp3" type="audio/mp3">
-							</audio><h5>Rap de Michael Jordan:</h5>
-							<audio controls loop preload="metadatos">
-							<source src="audio/RAP_DE_MICHAEL_JORDAN.mp3" type="audio/mp3">
-							</audio>
-						</td>
-						<td>
-							<iframe src="https://www.youtube.com/embed/I62MsbnZbjE" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-						</td>
-					</tr>
-				</tbody>
-			</table>
+            <section id="audios">
+                <h3>Audios</h3>
+                <p>A continuación se encuentran dos audios. El primero de ellos es el audio típico de la NBA, el cual se puede escuchar frecuentemente al sintonizar algún partido de baloncesto. Además, se tiene también un rap dedicado a la estrella mundial del baloncesto: Michael Jordan.</p>
+                <br>
+                <table>
+                    <tr>
+                        <td>
+                            <h5>Audio de la NBA:</h5> 
+                            <audio controls>
+                                <source src="audio/nba-sound.mp3" type="audio/mp3">
+                            </audio>
+                        </td>
+                        <td>
+                            <h5>Rap de Michael Jordan:</h5>
+                            <audio controls>
+                                <source src="audio/RAP_DE_MICHAEL_JORDAN.mp3" type="audio/mp3">
+                            </audio>
+                        </td>
+                    </tr>
+                </table>
+            </section>
+            
+            <section id="videos">
+                <h3>Video</h3>
+                <p>A continuación podrá disfrutar del resumen de un partido profesional de la NBA disputado entre los equipos Golden State Warriors y Angeles Lakers.</p>
+                <br>
+                <iframe src="https://www.youtube.com/embed/I62MsbnZbjE" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </section>
+
+            <section id="imagenes">
+                <h3>Imagenes</h3>
+                <p>En esta sección podrá apreciar una serie de imagenes tomadas en medio de partidos profesionales de baloncesto.</p>
+                <br>
+                <div id ="contenedorImagenes">
+                    <img src="img/juego3.jpg">
+                    <img src="img/juego4.jpg">
+                </div>
+            </section>
+
         </section>
     </main>
 </body>
