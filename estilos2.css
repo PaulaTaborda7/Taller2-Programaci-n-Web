@@ -50,8 +50,9 @@ form {
 /* Estilos para el campo deñ teléfono */
 #telefono {
     position: relative;
+    float: right;
     top: 10px;
-    right: -50px;
+    /* right: -50px; */
 	width: 45%;
 }
 
