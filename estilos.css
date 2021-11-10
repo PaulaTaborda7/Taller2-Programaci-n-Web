@@ -201,7 +201,7 @@ footer #cuerpoFooter{
     width: 60px;
     position:relative;
     animation-name: animacionBalon;
-    animation-duration: 10s;
+    animation-duration: 20s;
     animation-iteration-count: infinite;
 }
 
@@ -210,4 +210,8 @@ footer #cuerpoFooter{
     0% {left:0%}
     50% {left:90%}
     100% {left:0%}
+}
+
+.paginaActiva{
+    background-color: #FB9C50;
 }
