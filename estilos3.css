@@ -1,0 +1,38 @@
+/* Se formatea todo el documento dejando margin y pading en 0*/
+*{
+    margin: 0;
+    padding: 0;
+}
+.estaContenedor{
+    display: flex;
+    /* Definición del borde con su estilo, color y radio */
+    border: black;
+    border-style: solid;
+    border-radius: 10px;
+    /* Escogemos un color similar al blanco para que sea el fondo del contenedor. Además, se le deja una opacidad del 85% lo cual corresponde a una transparencia del 15% */
+    background-color: whitesmoke;
+    /*opacity: 85%;*/
+    /* Definimos márgenes del 10% tanto a izquierda como a derecha con el fin de tener centrado el contenedor */
+    margin-left: 10%;
+    margin-right: 10%;
+    /* Definimos márgenes de 15px tanto hacia arriba como hacia abajo para que los contenedores estén separados de si mismos y de cualquier otro contenido */
+    margin-top: 15px;
+    margin-bottom: 15px;
+    /* Damos un ancho del 80%, por lo que quedará un 10% libre tanto a izquierda como a derecha del contenedor. La altura siempre será del 100% con respecto al contenido */
+    width: 80%;
+    height: 100%;
+    /* Agregamos un padding del 2% para que el contenido no quede tan pegado a los bordes */
+    padding: 2%;
+    
+}
+.jugador{
+    position:relative;
+   /* display:inline-block; */
+    border: 2px solid black;
+}
+.jugador img{
+    height: 400px;
+}
+p{
+    text-align: center;
+}
