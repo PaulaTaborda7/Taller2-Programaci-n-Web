@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,11 +10,13 @@
     <link rel="stylesheet" href="estilos2.css">
     <title>Formulario de Comentarios</title>
 </head>
+
 <body>
     <section id="navbar">
         <nav>
-            <div id = "encabezadoNavbar">
-                <img id ="logo" src="img/logo.png" alt="Logo - Balón de baloncesto"><span id= "textoNavbar">Baloncesto</span>
+            <div id="encabezadoNavbar">
+                <img id="logo" src="img/logo.png" alt="Logo - Balón de baloncesto"><span
+                    id="textoNavbar">Baloncesto</span>
             </div>
             <ul>
                 <li><a href="index.html">Inicio</a></li>
@@ -28,46 +31,48 @@
         <div id="div_comentarios">
             <h2 id="titulo_formulario">Formulario para tus opiniones</h2>
             <div id="contenedor_logo_formulario"><img src="img/formulario.png" id="logo_formulario"></img></div>
-            <form action="#"> 
+            <form action="#">
                 <label for="nombre_completo" id="nombre">
-                    <input type="text" id="nombre_completo" name="nombre_completo" placeholder="Mi nombre es"/>
+                    <input type="text" id="nombre_completo" name="nombre_completo" placeholder="Mi nombre es" />
                 </label>
                 <label for="correo_electronico" id="correo">
-                    <input type="email" id="correo_electronico" name="correo_electronico" placeholder="Mi correo es"/>
+                    <input type="email" id="correo_electronico" name="correo_electronico" placeholder="Mi correo es" />
                 </label>
                 <label for="fecha_actual" id="fecha">
-                    <input type="date" id="fecha_actual" name="fecha_actual" placeholder=""/>
+                    <input type="date" id="fecha_actual" name="fecha_actual" placeholder="" />
                 </label>
                 <label for="telefono" id="telefono">
-                    <input type="text" id="telefono" name="telefono" placeholder="Mi teléfono es"/>
+                    <input type="text" id="telefono" name="telefono" placeholder="Mi teléfono es" />
                 </label>
                 <label for="tipo_internauta" id="tipo_internauta">
                     <select placeholder="Tipo de internauta" name="tipo_internauta" id="tipo_internauta" required>
-                      <option disabled hidden selected>Tipo de internauta </option>
-                      <option>Jugador de baloncesto</option>
-                      <option>Consultor de la página</option>
-                      <option>Aprendiz de este deporte</option>
-                      <option>Otro</option>
+                        <option disabled hidden selected>Tipo de internauta </option>
+                        <option>Jugador de baloncesto</option>
+                        <option>Consultor de la página</option>
+                        <option>Aprendiz de este deporte</option>
+                        <option>Otro</option>
                     </select>
                 </label>
                 <label for="opinion_contenido_sitio" id="opinion_sitio">
-                    <textarea name="opinion_contenido_sitio" placeholder="Opinión sobre el contenido del sitio" id="opinion_contenido_sitio" cols="30" rows="5" required></textarea>
+                    <textarea name="opinion_contenido_sitio" placeholder="Opinión sobre el contenido del sitio"
+                        id="opinion_contenido_sitio" cols="30" rows="5" required></textarea>
                 </label>
                 <label for="opinion_sitio" id="opinion_sitio2">
-                    <textarea name="opinion_sitio" placeholder="Opinión sobre el diseño del sitio" id="opinion_sitio" cols="30" rows="5" required></textarea>
+                    <textarea name="opinion_sitio" placeholder="Opinión sobre el diseño del sitio" id="opinion_sitio"
+                        cols="30" rows="5" required></textarea>
                 </label><br><br><br>
                 <label for="escala" id="escala_satisfaccion">
                     <span id="span_escala">Indica a nivel general cómo te pareció el sitio</span> <br>
                     <span id="span2_escala"> (MALO REGULAR BUENO) </span>
                     <input type="range" name="rango" min="1" max="3" list="lista-rango" id="escala">
-                        <datalist id="lista-rango">
-                            <option value="1" label="Malo">
-                            <option value="2" label="Regular">
-                            <option value="3" label="Bueno">
-                        </datalist>
+                    <datalist id="lista-rango">
+                        <option value="1" label="Malo">
+                        <option value="2" label="Regular">
+                        <option value="3" label="Bueno">
+                    </datalist>
                 </label>
                 <label for="submit" id="submit_">
-                    <input id="submit" type="submit" value="Enviar mensajes"/>
+                    <input id="submit" type="submit" value="Enviar mensajes" />
                 </label>
             </form>
         </div>
@@ -85,4 +90,5 @@
         </div>
     </footer>
 </body>
+
 </html>
