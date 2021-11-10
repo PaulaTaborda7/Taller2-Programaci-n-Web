@@ -179,3 +179,35 @@ footer #tituloFooter{
 footer #cuerpoFooter{
     padding: 15px;
 }
+
+/* Creamos una clase titulosIndex para que se centren los títulos al combinarlos con un display flex */
+.titulosIndex{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Hacemos que un div llamado divTitulosIndex sea de display flex para poder organizar las animaciones en la misma línea */
+#divTitulosIndex{
+    display: flex;
+}
+
+/* Le damos a los div de imágenes que animaremos un ancho del 35% */
+#imagenIzquierda, #imagenDerecha{
+    width: 35%;
+}
+
+/* A ambas imagenes les asignamos un ancho de 60 pixeles y las asociamos a una animación del nombre animacionBalon*/
+#imagenIzquierda img, #imagenDerecha img{
+    width: 60px;
+    position:relative;
+    animation-name: animacionBalon;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+}
+
+/* Hacemos que la animación del balón se mueva con respecto a porcentajes en el tiempo hacia izquierda o derecha. No utilizamos 100% porque se sale del contenedor. */
+@keyframes animacionBalon{
+    0% {left:0%}
+    50% {left:90%}
+    100% {left:0%}
+}
