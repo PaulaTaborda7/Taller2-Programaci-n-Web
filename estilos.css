@@ -27,6 +27,7 @@
    margin-left: 10%;
    font-size: 30px;
    color: white;
+   text-decoration: none;
 }
 
 /* Movemos la lista de acceso al resto de páginas del sitio hacia la derecha haciendo uso del margin-left */
