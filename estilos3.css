@@ -29,19 +29,24 @@
     margin-left: 0px;
     padding: 0px;
 }
-.jugador{
-    position:relative;
-   /* display:inline-block; */
-    border: 2px solid black;
-}
-.jugador img{
-    height: 400px;
-}
+
 p{
     text-align: center;
 }
 
-/* h1{
-    position:absolute;
-    margin-left:45%;
-  } */
+/* Centramos la tabla de estadísticas */
+#tablaEstadisticas{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Le damos un tamaño específico a las imágenes dentro de la tabla */
+#tablaEstadisticas img{
+    height: 400px;
+    width: 330px;
+}
+
+/* Cambiamos el tamaño de letra en la tabla */
+#tablaEstadisticas th{
+    font-size: 130%;
+}
