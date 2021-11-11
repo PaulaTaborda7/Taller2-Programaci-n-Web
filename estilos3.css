@@ -25,6 +25,10 @@
     padding: 2%;
     
 }
+#titulo{
+    margin-left: 0px;
+    padding: 0px;
+}
 .jugador{
     position:relative;
    /* display:inline-block; */
@@ -36,3 +40,8 @@
 p{
     text-align: center;
 }
+
+/* h1{
+    position:absolute;
+    margin-left:45%;
+  } */
