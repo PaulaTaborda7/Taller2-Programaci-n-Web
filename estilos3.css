@@ -1,0 +1,137 @@
+/* Se formatea todo el documento dejando margin y pading en 0*/
+*{
+    margin: 0;
+    padding: 0;
+}
+.estaContenedor{
+    display: flex;
+    /* Definición del borde con su estilo, color y radio */
+    border: black;
+    border-style: solid;
+    border-radius: 10px;
+    /* Escogemos un color similar al blanco para que sea el fondo del contenedor. Además, se le deja una opacidad del 85% lo cual corresponde a una transparencia del 15% */
+    background-color: whitesmoke;
+    /*opacity: 85%;*/
+    /* Definimos márgenes del 10% tanto a izquierda como a derecha con el fin de tener centrado el contenedor */
+    margin-left: 10%;
+    margin-right: 10%;
+    /* Definimos márgenes de 15px tanto hacia arriba como hacia abajo para que los contenedores estén separados de si mismos y de cualquier otro contenido */
+    margin-top: 15px;
+    margin-bottom: 15px;
+    /* Damos un ancho del 80%, por lo que quedará un 10% libre tanto a izquierda como a derecha del contenedor. La altura siempre será del 100% con respecto al contenido */
+    width: 80%;
+    height: 100%;
+    /* Agregamos un padding del 2% para que el contenido no quede tan pegado a los bordes */
+    padding: 2%;
+    
+}
+/* Estilo para título hecho en contenedor */
+#titulo{
+    margin-left: 0px;
+    padding: 0px;
+}
+
+/* Centramos la tabla de estadísticas */
+#tablaEstadisticas{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Le damos un tamaño específico a las imágenes dentro de la tabla */
+#tablaEstadisticas img{
+    height: 400px;
+    width: 330px;
+}
+
+/* Cambiamos el tamaño de letra en la tabla */
+#tablaEstadisticas th{
+    font-size: 130%;
+}
+
+p{
+    text-align: center;
+}
+
+/* h1{
+    position:absolute;
+    margin-left:45%;
+  } */
+/* Contenedor para las barras estadísticas */
+#Der{
+    display: flex;
+    flex-wrap: wrap-reverse;
+}
+
+  /* Estiolo para los contenedores(barras) que tengan un id que inicie por barra o sea, para todas las barras(barra1,barra2...barra5) */
+  [id*="barra"]{
+	width: 50px;
+    /* opacity: 80%; */
+    border-radius: 10px 10px 0 0;  /* Para que el borde sea solo para la parte superior de las barras */
+    
+}
+/* Barra que separa las dos graficas de barras estadísticas */
+#x{
+    background-color: whitesmoke;
+    width: 550px;
+    height: 200px;
+}
+/* Estilo de primeras y últimas barras de la gráfica */
+#barra1{
+    background-color: #f57e23;
+    height: 75px;
+    animation-name: primera;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+     animation-timing-function: linear; /*para que la animacion siempre se mueva a la misma velocidad */
+} 
+/*  */
+/*  Estilo para las barras 2das y 4tas  */
+#barra2{
+    background-color:#1A67AC;
+    height: 120px;
+    /* Animación */
+    animation-name: segunda;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+     animation-timing-function: linear; /*para que la animacion siempre se mueva a la misma velocidad */
+    
+}
+#barra3{
+    background-color: #f57e23;
+    height: 200px;
+    animation-name: tercera;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear; /*para que la animacion siempre se mueva a la misma velocidad */
+}
+
+
+/* @keyframes prim{
+    0%{background-color: yellowgreen;}
+    50%{background-color: purple;}
+    100%{background-color: springgreen;}
+} */
+/* Animación para las primeras y últimas filas */
+@keyframes primera{
+    0%{height: 75px;}
+    25%{height: 120px;}
+    50%{height: 180px;}
+    75%{height: 120px;}
+    100%{height:75px;}
+}
+/* Animación para las filas 2da y 4ta */
+ @keyframes segunda {
+    0%{height: 120px;}
+    25%{height: 75px;}
+    50%{height: 120px;}
+    75%{height: 180px;}
+    100%{height:120px;}
+} 
+/* Animación para las filas del centro Pero sin saber por qué no funciona*/
+@keyframes tercera {
+    0%{height: 200px;}
+    25%{height: 180px;}
+    50%{height: 150px;}
+    75%{height: 180px;}
+    100%{height: 200px;}
+}

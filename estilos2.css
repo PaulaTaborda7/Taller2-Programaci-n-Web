@@ -1,0 +1,227 @@
+/* A continuación importamos una URL de donde vamos a usar la familia Montserrat */
+@import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
+
+/* Medidas generales del formulario (espacio donde se distribuirán todos los elementos que conformen el formulario */
+/* Recordemos que el padding es el espacio entre el contenido del elemento y su borde */
+form {
+    padding: 37.5px;
+    margin: 120px 0;
+}
+
+/* Estilos para el contenedor general */
+#div_comentarios {
+    font-family: 'Montserrat', Arial, sans-serif;
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+    font-size-adjust: 12;
+    border: black;
+    border-style: solid;
+    border-radius: 10px;
+    background-color: whitesmoke;
+    width: 80%;
+    height: 100%;
+    margin-left: 10%;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    padding: 2%;
+    opacity: 95%;
+}
+
+/* Estilos para el campo del nombre */
+#nombre_completo {
+	float: left;
+	width: 45%;
+}
+
+/* Estilos para el campo del correo electrónico */
+#correo {
+	float: right;
+	width: 45%;
+}
+
+/* Estilos para el campo de la fecha */
+#fecha {
+    position: relative;
+    float: left;
+    top: 10px;
+	width: 45%;
+}
+
+/* Estilos para el campo deñ teléfono */
+#telefono {
+    position: relative;
+    float: right;
+    top: 10px;
+    /* right: -50px; */
+	width: 45%;
+}
+
+/* Estilos para el campo del tipo de internauta */
+#tipo_internauta {
+    position: relative;
+    top: 10px;
+    width: 100%;
+}
+
+/* Estilos para el campo donde se pide la opinión acerca del contenido del sitio y acerca del diseño */
+#opinion_sitio {
+    position: relative;
+    top: 30px;
+    width: 100%;
+}
+
+/* Estilos para el segundo campo de opinión que se presenta en el formulario */
+#opinion_sitio2 {
+    position: relative; /* Se sabe que la posición relativa no afecta la posición de los demás elemmentos y además desplaza el elemento conforme a su posicionamiento original o normal */
+    top: 10px; /* top, right, left, bottom son las propiedades mediante las cuales se controla el desplazamiento */
+    width: 100%;
+}
+
+/* Estilos para el slider del formulario, creado con el obetivo de que el usuario indique su nivel de satisfacción */
+#escala_satisfaccion {
+    position: relative;
+    top: 20px;
+    float: left;
+    width: 44%;
+}
+
+/* Aquí están los estilos para las instrucciones que se le muestran al usuario sobre el slider */
+#span_escala {
+    background-color: rgb(255, 245, 229); /* propiedad que define el color del fondo de los selectores dados */
+    border: none; /* Borde general */
+    color: #474544; /* Color de la letra */
+    font-weight: 400; /* Especifica el peso o grueso de la letra */
+    letter-spacing: 1px; /* Cantidad de espacio adicional entre caracteres */
+	margin: 0em 0 1.875em 0; /* La unidad em hace referencia al tamaño en puntos de la letra que se está utilizando y margin es la margen para los cuatro lados */
+	padding: 0 0 0.875em 0; /* Recordemos que es el espacio entre el contenido y el borde */
+    text-transform: uppercase; /* La letra se transforma a mayúscula */
+	width: 100%; /* especifica la anchura del area de contenido */
+}
+
+/* Estilos para la indicación de MALO   REGULAR  BUENO que se le muestra al usuario */
+#span2_escala {
+    background-color: rgb(255, 245, 229); /* propiedad que define el color del fondo de los selectores dados */
+    border: none; /* Borde general */
+    color: #474544; /* Color de la letra */
+    font-weight: 400; /* Especifica el peso o grueso de la letra */
+    letter-spacing: 1px; /* Cantidad de espacio adicional entre caracteres */
+	margin: 0em 0 1.875em 0; /* La unidad em hace referencia al tamaño en puntos de la letra que se está utilizando y margin es la margen para los cuatro lados */
+	padding: 0 0 0.875em 0; /* Recordemos que es el espacio entre el contenido y el borde */
+    text-transform: uppercase; /* La letra se transforma a mayúscula */
+    font-weight: bold;
+    word-spacing: 100px;
+}
+
+
+/* Estilos para el label que contiene el input de de enviar mensajes (enviar formulario) */
+#submit_{
+    position: relative;
+    top: 130px;
+    right: 30px;
+    background: rgb(255, 245, 229); 
+    border: solid 2px #5e5754;
+    color: #474544;
+    cursor: pointer; /*  El cursor es ahora la manito */
+    display: inline-block;
+    font-family: 'Helvetica', Arial, sans-serif;
+    font-size: 0.875em;
+    font-weight: bold;
+    padding: 20px 35px;
+    text-transform: uppercase; /* El texto se transforma a mayúsculas */
+  }
+
+  /* Estilos para el input o botón de enviar formulario */
+#submit {
+    background: rgb(255, 245, 229);
+    cursor: pointer;
+  }
+  
+/* Se usa la pseudo clase :hoverpara que al pasar por el label e input de enviar cambie de color el fondo */
+#submit_:hover, #submit:hover {
+    background: #474544;
+    color: #F2F3EB;
+ }
+
+  /* Estilos para el div que contiene el logo del formulario */
+#contenedor_logo_formulario {
+    /* position: relative;
+    width: 100%;
+    left: 450px; */
+}
+
+/* Estilos para el logo del formulario */
+#logo_formulario {
+    width: 10%;
+    height: 10%;
+    cursor: pointer;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Se usa la pseudo clase :hover para que cuando el usaurio pase el cursor por el logo del formulario
+se produzca una animación */
+#logo_formulario:hover {
+    animation: scale_2 1s infinite;
+}
+
+/* Animación del logo del formulario */
+@keyframes scale_2{
+    0%   {transform: scale(1);}
+    50%  {transform: scale(0.8);}
+    100% {transform: scale(1);}
+}
+
+
+
+/* Estilos para los input, select y textarea*/
+input, select, textarea {
+	background-color: rgb(255, 245, 229); /* propiedad que define el color del fondo de los selectores dados */
+    border: none; /* Borde general */
+	border-bottom: solid 2px #474544; /* El borde inferior de cada selector */
+	color: #474544; /* Color de la letra */
+    font-weight: 400; /* Especifica el peso o grueso de la letra */
+    letter-spacing: 1px; /* Cantidad de espacio adicional entre caracteres */
+	margin: 0em 0 1.875em 0; /* La unidad em hace referencia al tamaño en puntos de la letra que se está utilizando y margin es la margen para los cuatro lados */
+	padding: 0 0 0.875em 0; /* Recordemos que es el espacio entre el contenido y el borde */
+    text-transform: uppercase; /* La letra se transforma a mayúscula */
+	width: 100%; /* especifica la anchura del area de contenido */
+}
+
+/* Estilos para todos los inputs, los select y los textarea*/
+input, select, textarea {
+    color: #5A5A5A;
+    font: inherit;
+    margin: 0;
+}
+
+/* Estilos para el título del formulario */
+#titulo_formulario {
+    color: #1A67AC;
+    font: inherit;
+    font-size: 200%;
+    margin: 40px;
+}
+
+/* Especificación solo para los inputs */
+input {
+    line-height: normal;
+}
+
+/* :focus es una pseudo-clase que representa un elemento en el que se ha puesto el foco (generalmente activa con click)*/
+input:focus, textarea:focus, select:focus {
+	outline: none;
+	padding: 0 0 0.875em 0;
+    background-color: rgb(223, 228, 250);
+}
+
+/* Se especifica al select un nuevo background (tenía una flecha indicativa por defecto, cambia a la especificada en esa URL) se especifica que la felcha no se puede repetir, que debe quedar a la derecha y el color del fondo que se había estado manejando */
+select {
+  background: url('https://cdn4.iconfinder.com/data/icons/ionicons/512/icon-ios7-arrow-down-32.png') no-repeat right rgb(255, 245, 229);
+  outline: none;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+}
+
+
+
